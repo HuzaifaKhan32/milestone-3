@@ -39,7 +39,7 @@ function Header() {
                 </div>
             </div>
         </div>
-        <div className='px-6 w-full h-16 flex justify-between items-center'>
+        <div className='header px-6 w-full h-16 flex justify-between items-center'>
             <div className="left">
                 <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
             </div>

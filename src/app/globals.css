@@ -31,4 +31,55 @@
   .information{
     display: none;
   }
+  .header{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .information{
+    display: none;
+  }
+  .header{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
+}
+
+@media (max-width: 756px) {
+  .images{
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 20px;
+  }
+  .hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container1{
+    height: auto;
+  }
+  .shopHero{
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    height: auto;
+  }
+  .poster{
+    flex-direction: column;
+  }
+  .main-container2{
+    height: auto;
+  }
+  .shop-image{
+    height: auto;
+    width: auto;
+  }
 }
