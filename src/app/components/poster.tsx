@@ -28,7 +28,7 @@ function Poster() {
                         </div>
                     </div>
                     <div className="flex justify-start items-center ">
-                        <Image src={shopHero} alt='ShopHero' />
+                        <Image src={shopHero} alt='ShopHero' placeholder='empty'/>
                     </div>
                 </div>
             </div>

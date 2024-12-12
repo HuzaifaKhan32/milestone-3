@@ -16,7 +16,8 @@ function Editors() {
                 <div className="1 relative">
                     <Image
                         src={men}
-                        alt='men' />
+                        alt='men'
+                        placeholder='empty' />
                     <div className="absolute bg-white w-40 h-12 text-base font-bold z-10 top-[85%] left-6 rounded flex justify-center items-center">
                         <p>MEN</p>
                     </div>
@@ -24,7 +25,9 @@ function Editors() {
                 <div className="2 relative">
                     <Image
                         src={women}
-                        alt='women' />
+                        alt='women'
+                        placeholder='empty'
+                         />
                     <div className="absolute bg-white w-40 h-12 text-base font-bold z-10 top-[85%] left-6 rounded flex justify-center items-center">
                             <p>WOMEN</p>
                         </div>
@@ -33,7 +36,9 @@ function Editors() {
                     <div className='relative'>
                         <Image
                             src={accessories}
-                            alt='accessories' />
+                            alt='accessories'
+                            
+                            placeholder='empty' />
                             <div className="absolute bg-white px-6 py-3 text-base font-bold z-10 top-[70%] left-6 rounded flex justify-center items-center">
                             <p>ACCESSORIES</p>
                         </div>
@@ -41,7 +46,9 @@ function Editors() {
                     <div className='relative'>
                         <Image
                             src={kids}
-                            alt='kids' />
+                            alt='kids'
+                            placeholder='empty'
+                             />
                         <div className="absolute bg-white px-6 py-3 text-base font-bold z-10 top-[70%] left-6 rounded flex justify-center items-center">
                             <p>KIDS</p>
                         </div>

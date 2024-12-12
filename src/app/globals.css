@@ -16,6 +16,20 @@
   background-size: cover;
 }
 
+.toggle-menu{
+  transition: 1s ease;
+  animation: moveTop 1s ease;
+}
+
+@keyframes moveTop{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(100%);
+  }
+}
+
 @media (max-width : 475px){
   .hero{
     max-width: 100%;
