@@ -2,7 +2,7 @@ import React from 'react'
 
 function PreFooter() {
     return (
-        <footer className='mt-20 flex border-b py-4 px-4 sm:px-10 bg-[#FAFAFA] font-sans min-h-[70px] tracking-wide relative z-50 h-[8.5rem]'>
+        <footer className='mt-20 flex border-b py-4 px-4 sm:px-10 bg-[#FAFAFA] min-h-[70px] tracking-wide h-[8.5rem]'>
             <div className='flex flex-wrap items-center justify-between lg:gap-y-2 gap-y-4 gap-x-4 w-full max-w-[65.5rem] mx-auto max-md:flex-col max-md:items-start max-md:px-7'>
                 <div className="left">
                     <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
@@ -27,9 +27,9 @@ function PreFooter() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" className="cursor-pointer" viewBox="0 0 24 24">
                             <linearGradient id="a" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047"
                                 gradientTransform="matrix(0 -1.98 -1.84 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="#fd5" />
-                                <stop offset=".5" stop-color="#ff543e" />
-                                <stop offset="1" stop-color="#c837ab" />
+                                <stop offset="0" stopColor="#fd5" />
+                                <stop offset=".5" stopColor="#ff543e" />
+                                <stop offset="1" stopColor="#c837ab" />
                             </linearGradient>
                             <path fill="url(#a)"
                                 d="M1.5 1.633C-.386 3.592 0 5.673 0 11.995c0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091C18.89.029 18.778.005 15.91 0 5.737.005 3.507-.448 1.5 1.633z"

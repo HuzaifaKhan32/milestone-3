@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer className="font-sans tracking-wide pt-12 pb-4 px-10 text-black">
+    <footer className="tracking-wide pt-12 pb-4 px-10 text-black">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-[65.5rem] mx-auto">
         <div>
           <h4 className=" font-semibold text-lg mb-6">Quick Links</h4>

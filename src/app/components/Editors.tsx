@@ -17,7 +17,8 @@ function Editors() {
                     <Image
                         src={men}
                         alt='men'
-                        placeholder='empty' />
+                        quality={100}
+                        priority />
                     <div className="absolute bg-white w-40 h-12 text-base font-bold z-10 top-[85%] left-6 rounded flex justify-center items-center">
                         <p>MEN</p>
                     </div>
@@ -26,20 +27,22 @@ function Editors() {
                     <Image
                         src={women}
                         alt='women'
-                        placeholder='empty'
-                         />
+                        quality={100}
+                        priority
+                    />
                     <div className="absolute bg-white w-40 h-12 text-base font-bold z-10 top-[85%] left-6 rounded flex justify-center items-center">
-                            <p>WOMEN</p>
-                        </div>
+                        <p>WOMEN</p>
+                    </div>
                 </div>
                 <div className="3 flex flex-col flex-wrap gap-5">
                     <div className='relative'>
                         <Image
                             src={accessories}
                             alt='accessories'
-                            
-                            placeholder='empty' />
-                            <div className="absolute bg-white px-6 py-3 text-base font-bold z-10 top-[70%] left-6 rounded flex justify-center items-center">
+                            quality={100}
+                            priority
+                        />
+                        <div className="absolute bg-white px-6 py-3 text-base font-bold z-10 top-[70%] left-6 rounded flex justify-center items-center">
                             <p>ACCESSORIES</p>
                         </div>
                     </div>
@@ -47,8 +50,9 @@ function Editors() {
                         <Image
                             src={kids}
                             alt='kids'
-                            placeholder='empty'
-                             />
+                            quality={100}
+                            priority
+                        />
                         <div className="absolute bg-white px-6 py-3 text-base font-bold z-10 top-[70%] left-6 rounded flex justify-center items-center">
                             <p>KIDS</p>
                         </div>
