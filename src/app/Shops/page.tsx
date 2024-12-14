@@ -4,7 +4,7 @@ import BrandsName from '../components/BrandsName';
 import { LiaIconsSolid } from "react-icons/lia";
 import ShopProduct from '../components/ShopProduct';
 import { GrTask } from "react-icons/gr";
-import Button from '../components/Button';
+
 
 
 const products: string[] = ["first", "second", "third", "fourth", "fifth"]
