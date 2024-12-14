@@ -46,11 +46,11 @@ function Header() {
             <div className="right w-[68rem] flex justify-between items-center">
                 <div className="links font-bold text-sm text-[#737373] flex items-center justify-between gap-5">
                     <Link href={"/"}>Home</Link>
-                    <Link href={"/"} className='flex items-center gap-2'>
+                    <Link href={"/Shops"} className='flex items-center gap-2'>
                     <span>Shop</span> 
                     <span> <IoIosArrowDown /> </span>
                     </Link>
-                    <Link href={"/"}>About</Link>
+                    <Link href={"/About"}>About</Link>
                     <Link href={"/"}>Blog</Link>
                     <Link href={"/"}>Contact</Link>
                     <Link href={"/"}>Page</Link>

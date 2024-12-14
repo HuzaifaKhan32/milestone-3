@@ -15,31 +15,47 @@ import product5 from "../../../../public/fixed-height (3).png"
 import product6 from "../../../../public/fixed-height (4).png"
 import product7 from "../../../../public/fixed-height (5).png"
 import product8 from "../../../../public/fixed-height (6).png"
+import product9 from "../../../../public/product1.png"
+import product10 from "../../../../public/product2.png"
+import product11 from "../../../../public/product3.png"
+import product12 from "../../../../public/product4.png"
 
 const productList = {
     "1": {
         image: product1
     },
-    "2" : {
+    "2": {
         image: product2
     },
-    "3" :{
+    "3": {
         image: product3
     },
-    "4" : {
+    "4": {
         image: product4
     },
-    "5" : {
+    "5": {
         image: product5
     },
-    "6" : {
+    "6": {
         image: product6
     },
-    "7" : {
+    "7": {
         image: product7
     },
-    "8" :{
+    "8": {
         image: product8
+    },
+    "9": {
+        image: product9
+    },
+    "10": {
+        image: product10
+    },
+    "11": {
+        image: product11
+    },
+    "12": {
+        image: product12
     }
 }
 
