@@ -39,7 +39,7 @@ function Header() {
                 </div>
             </div>
         </div>
-        <div className='header px-6 w-full h-16 flex justify-between items-center'>
+        <div className='header px-6 w-full h-16 flex justify-between items-center gap-12'>
             <div className="left">
                 <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
             </div>
@@ -53,7 +53,7 @@ function Header() {
                     <Link href={"/About"}>About</Link>
                     <Link href={"/"}>Blog</Link>
                     <Link href={"/"}>Contact</Link>
-                    <Link href={"/"}>Page</Link>
+                    <Link href={"/Price"}>Pricing</Link>
                 </div>
                 <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
                     <div className='flex gap-1 items-center'>

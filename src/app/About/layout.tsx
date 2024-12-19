@@ -1,22 +1,19 @@
 import React from 'react'
 import AboutHeader from '../components/AboutHeader';
+import MobileNavbar from '../components/MobileNavbar2';
 
-
-
-function layout({
+export default function AboutLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className={`montserrat-regular`}>
                 <AboutHeader />
+                <MobileNavbar />
                 {children}
             </body>
         </html>
     );
-
 }
-
-export default layout

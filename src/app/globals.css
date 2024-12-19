@@ -70,13 +70,31 @@ html, body{
   object-fit: contain;
 }
 
-@keyframes moveTop{
-  0%{
-    transform: translateY(0%);
-  }
-  100%{
-    transform: translateY(100%);
-  }
+.big-ellipse{
+  top: 10%;
+  right: 10%;
+}
+
+.medium-ellipse{
+  top: 10%;
+  left: -10%;
+}
+
+.xsmall1-ellipse{
+  top: 30%;
+}
+
+.xsmall2-ellipse{
+  left: -10%;
+  top: 80%;
+}
+
+.small-ellipse{
+  top: 45%;
+}
+
+.play-button{
+  transform: translate(-50%, -50%);
 }
 
 
