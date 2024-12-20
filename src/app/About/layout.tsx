@@ -8,12 +8,10 @@ export default function AboutLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={`montserrat-regular`}>
-                <AboutHeader />
-                <MobileNavbar />
-                {children}
-            </body>
-        </html>
+        <div className={`montserrat-regular`}>
+            <AboutHeader />
+            <MobileNavbar />
+            {children}
+        </div>
     );
 }
