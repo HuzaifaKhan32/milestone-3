@@ -52,7 +52,7 @@ function Header() {
                     </Link>
                     <Link href={"/About"}>About</Link>
                     <Link href={"/"}>Blog</Link>
-                    <Link href={"/"}>Contact</Link>
+                    <Link href={"/Contact"}>Contact</Link>
                     <Link href={"/Price"}>Pricing</Link>
                 </div>
                 <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
