@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function Hero() {
@@ -16,7 +17,7 @@ function Hero() {
                         <h3>{`but think on a small scale`}</h3>
                     </div>
                     <div className="w-44 md:w-56 h-12 md:h-16 bg-[#2DC071] rounded flex justify-center items-center text-lg md:text-2xl font-bold">
-                        <button className="w-full h-full">Shop Now</button>
+                        <button className="w-full h-full"><Link href={"/Shops"} >Shop Now</Link></button>
                     </div>
                 </div>
             </div>
