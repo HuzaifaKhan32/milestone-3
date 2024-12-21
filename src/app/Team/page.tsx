@@ -10,10 +10,6 @@ import card6 from "../../../public/card6.jpg"
 import card7 from "../../../public/card7.jpg"
 import card8 from "../../../public/card8.jpg"
 import card9 from "../../../public/card9.jpg"
-import sub1 from "../../../public/subImages1.png"
-import sub2 from "../../../public/subImages2.png"
-import sub3 from "../../../public/subImages3.png"
-import sub4 from "../../../public/subImages4.png"
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import Image from 'next/image'
