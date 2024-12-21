@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import aboutHero from "../../../public/technology 1.png"
 import Image from 'next/image'
 import video from "../../../public/video.png"

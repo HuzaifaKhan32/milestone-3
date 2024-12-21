@@ -10,7 +10,6 @@ import card6 from "../../../public/card6.jpg"
 import card7 from "../../../public/card7.jpg"
 import card8 from "../../../public/card8.jpg"
 import card9 from "../../../public/card9.jpg"
-import RightImage from "../../../public/rightImage.png"
 import sub1 from "../../../public/subImages1.png"
 import sub2 from "../../../public/subImages2.png"
 import sub3 from "../../../public/subImages3.png"
@@ -51,25 +50,7 @@ const teamData = [
     },
 ]
 
-const subImages = [
-    {
-        image: sub1,
-        id: "sub1"
-    },
-    {
-        image: sub2,
-        id: "sub2"
 
-    },
-    {
-        image: sub3,
-        id: "sub3"
-    },
-    {
-        image: sub4,
-        id: "sub4"
-    },
-]
 
 function TeamPage() {
     return (
