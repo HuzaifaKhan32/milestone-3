@@ -7,12 +7,10 @@ export default function RootLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <html lang="en">
-        <body className={`montserrat-regular`}>
+      <div className={`montserrat-regular w-full min-h-screen`}>
         <AboutHeader />
         <MobileNavbar />
           {children}
-        </body>
-      </html>
+        </div>
     );
   }
