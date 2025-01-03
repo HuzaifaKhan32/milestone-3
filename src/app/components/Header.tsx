@@ -41,41 +41,44 @@ function Header() {
             </div>
             <div className='header px-6 w-full h-16 flex justify-between items-center gap-12'>
                 <div className="left">
-                    <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
+                    <Link href={"/"}>
+                        <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
+                    </Link>
                 </div>
                 <div className="right w-[68rem] flex justify-between items-center">
                     <div className="links font-bold text-sm text-[#737373] flex items-center justify-between gap-5">
                         <Link href={"/"}>Home</Link>
-                        <Link href={"/Shops"} className='flex items-center gap-2'>
+                        <Link href={"/shops"} className='flex items-center gap-2'>
                             <span>Shop</span>
                             <span> <IoIosArrowDown /> </span>
                         </Link>
                         <Link href={"/About"}>About</Link>
-                        <Link href={"/"}>Blog</Link>
-                        <Link href={"/Contact"}>Contact</Link>
-                        <Link href={"/Price"}>Pricing</Link>
+                        <Link href={"/team"}>Team</Link>
+                        <Link href={"/contact"}>Contact</Link>
+                        <Link href={"/price"}>Pricing</Link>
+                        <Link href={"/price"}>Pricing</Link>
                     </div>
                     <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
                         <div className='flex gap-1 items-center'>
-                            <CiUser className='text-xl'/>
+                            <CiUser className='text-xl' />
                             <p>Login / Register</p>
                         </div>
                         <div >
-                            <CiSearch className='text-xl'/>
+                            <CiSearch className='text-xl' />
                         </div>
                         <div>
-                            <Link href={"/Whishlist"} className='flex gap-1 text-base items-center'>
-                                <GoHeart className='text-xl'/> 1
+                            <Link href={"/whishlist"} className='flex gap-1 text-base items-center'>
+                                <GoHeart className='text-xl' /> 1
                             </Link>
                         </div>
                         <div >
-                            <Link href={"/Cart"} className='flex gap-1 text-base items-center'>
-                                <BsCart className='text-xl'/> 1
+                            <Link href={"/cart"} className='flex gap-1 text-base items-center'>
+                                <BsCart className='text-xl' /> 1
                             </Link>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

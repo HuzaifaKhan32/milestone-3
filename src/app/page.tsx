@@ -5,9 +5,15 @@ import Products from './components/Products'
 import ShopHero from './components/ShopHero'
 import Poster from './components/poster'
 
-function page() {
+
+
+async function page() {
+  
+  
+
   return (
     <>
+
       <Hero />
       <Editors />
       <Products />

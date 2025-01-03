@@ -24,7 +24,7 @@ function ShopPage() {
                             <p className='text-[#BDBDBD]'>Shop</p>
                         </div>
                     </div>
-                    <div className="product-banners w-full max-h-72 pb-12 flex justify-between items-center gap-4">
+                    <div className="product-banners w-full h-auto pb-12 flex justify-between items-center gap-4 max-md:flex-col max-md:flex-wrap">
                         {products.map((bgClass, index) => (
                             <div key={index} className={`${bgClass} max-w-52 min-h-56 text-white flex justify-center items-center gap-3 flex-col`}>
                                 <p className='font-bold text-base'>CLOTHS</p>
