@@ -10,13 +10,22 @@ import BrandsName from '@/app/components/BrandsName';
 import { client } from '@/sanity/lib/client'
 import imageUrlBuilder from '@sanity/image-url'
 
+interface Source {
+    asset : {
+        _ref: string
+        _type: string 
+    },
+    _type: string
+}
+
 // Get a pre-configured url-builder from your sanity client
 const builder = imageUrlBuilder(client)
 
 // Then we like to make a simple function like this that gives the
 // builder an image and returns the builder for you to specify additional
 // parameters:
-function urlFor(source: any) {
+function urlFor(source: Source) {
+    console.log(source)
   return builder.image(source)
 }
 

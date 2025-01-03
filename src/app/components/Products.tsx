@@ -1,13 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import product from "../../../public/product-cover-5.png"
-import product2 from "../../../public/fixed-height.png"
-import product3 from "../../../public/fixed-height (1).png"
-import product4 from "../../../public/fixed-height (2).png"
-import product5 from "../../../public/fixed-height (3).png"
-import product6 from "../../../public/fixed-height (4).png"
-import product7 from "../../../public/fixed-height (5).png"
-import product8 from "../../../public/fixed-height (6).png"
 import Link from 'next/link'
 import { client } from '@/sanity/lib/client'
 import imageUrlBuilder from '@sanity/image-url'
@@ -20,9 +12,17 @@ interface IProduct {
     slug: string
 }
 
+interface Source {
+    asset : {
+        _ref: string
+        _type: string 
+    },
+    _type: string
+}
+
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: any) {
+function urlFor(source: Source) {
     return builder.image(source)
 }
 
