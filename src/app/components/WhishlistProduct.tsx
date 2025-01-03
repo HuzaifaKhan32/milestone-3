@@ -7,14 +7,22 @@ import imageUrlBuilder from '@sanity/image-url'
 interface IProduct {
     title: string
     desc: string
-    image: string
+    image: Source
     price: string
     slug: string
 }
 
+interface Source {
+    asset : {
+        _ref: string
+        _type: string 
+    },
+    _type: string
+}
+
 const builder = imageUrlBuilder(client)
 
-function urlFor(source: any) {
+function urlFor(source: Source) {
     return builder.image(source)
 }
 
@@ -36,7 +44,7 @@ async function WhishlistProduct() {
   return (
     <div className='max-w-[66rem] mx-auto py-10'>
         <div className="products flex items-center justify-evenly flex-wrap">
-                {data.map((card, index) => (
+                {data.map((card: IProduct, index) => (
                     <Link href={`/Product/${card.slug}`} key={index}>
                         <div className="card w-60 h-[38.5rem]">
                             <div className='bg-[#E8E8E8] h-[28rem]'>

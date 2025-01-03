@@ -7,7 +7,7 @@ import imageUrlBuilder from '@sanity/image-url'
 interface IProduct {
     title: string
     desc: string
-    image: string
+    image: Source
     price: string
     slug: string
 }
@@ -50,7 +50,7 @@ async function Products() {
                 <p className='text-sm text-[#737373]'>{`Problem trying to solve the conflict between`}</p>
             </div>
             <div className="products flex items-center justify-evenly flex-wrap">
-                {data.map((card: any, index: any) => (
+                {data.map((card: IProduct, index: any) => (
                     <Link href={`/Product/${card.slug}`} key={index}>
                         <div className="card w-60 h-[40rem] mt-20">
                             <div className="bg-[#E8E8E8] max-w-full h-[24rem] flex justify-center items-center">
