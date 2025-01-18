@@ -61,8 +61,8 @@ async function ShopProduct() {
 
                 <div className="products flex items-center justify-evenly flex-wrap">
                     {data.map((card: IProduct, index) => (
-                        <Link href={`/Product/${card.slug}`}>
-                            <div className="card w-60 h-[38.5rem] mt-20" key={index}>
+                        <Link href={`/Product/${card.slug}`} key={index}>
+                            <div className="card w-60 h-[38.5rem] mt-20">
                                 <div className='bg-[#E8E8E8]'>
                                     <div className="max-w-full h-[24rem] flex justify-center items-center">
                                         <Image
