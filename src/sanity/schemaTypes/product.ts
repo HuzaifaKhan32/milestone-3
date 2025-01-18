@@ -1,65 +1,55 @@
-export const product = {
-    name: "Product",
+import { defineType } from "sanity"
+
+export const product = defineType({
+    name: "product",
     title: "Product",
     type: "document",
     fields: [
         {
             name: "title",
             title: "Title",
+            validation: (rule) => rule.required(),
             type: "string"
-        },
-        {
-            name: "desc",
-            title: "Description",
-            type: "string"
-        },
-        {
-            name: "price",
-            title: "Price",
-            type: "string"
-        },
-        {
-            name: "image",
-            title: "Product Image",
-            type: "image"
         },
         {
             name: "slug",
-            title: "Slug ID",
-            type: "string"
-        }
-    ]
-}
-
-export const product2 = {
-    name: "Product2",
-    title: "Product2",
-    type: "document",
-    fields: [
-        {
-            name: "title",
-            title: "Title",
-            type: "string"
+            title: "Product Slug",
+            validation: (rule) => rule.required(),
+            type: "slug"
         },
         {
-            name: "desc",
-            title: "Description",
-            type: "string"
+            name:"description",
+            type:"text",
+            validation: (rule) => rule.required(),
+            title:"Description",
+        },
+        {
+            name: "productImage",
+            type: "string",
+            validation: (rule) => rule.required(),
+            title: "Product Image"
         },
         {
             name: "price",
+            type: "number",
+            validation: (rule) => rule.required(),
             title: "Price",
-            type: "string"
         },
         {
-            name: "image",
-            title: "Product Image",
-            type: "image"
+            name: "tags",
+            type: "array",
+            title: "Tags",
+            of: [{ type: "string" }]
         },
         {
-            name: "slug",
-            title: "Slug ID",
-            type: "string"
+            name:"dicountPercentage",
+            type:"number",
+            title:"Discount Percentage",
+        },
+        {
+            name:"isNew",
+            type:"boolean",
+            title:"New Badge",
         }
     ]
-}
+})

@@ -5,6 +5,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import product1 from "../../../public/product1.png"
 import product2 from "../../../public/product2.png"
 
+
 interface CartData {
     image: StaticImageData
     price: string
@@ -25,6 +26,7 @@ const cartData: CartData[] = [
 ]
 
 function page() {
+    
     return (
         <div className='cart max-w-5xl mx-auto min-h-screen'>
             <div className='flex items-center w-full gap-5 h-24 font-bold max-md:px-5'>
@@ -51,7 +53,7 @@ function page() {
                             <span>1</span>
                             <span className=''>
                                 <MdOutlineKeyboardArrowUp />
-                                <MdKeyboardArrowDown />
+                                <MdKeyboardArrowDown  />
                             </span>
                         </div>
                         <span className='w-[25%] flex justify-end'>{product.price}</span>
@@ -65,7 +67,7 @@ function page() {
             </div>
             <div className='cart flex justify-between items-start max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-10 max-md:px-5'>
                 <div className='flex gap-3'>
-                    <input type="text" className='bg-transparent border-2 border-[#252B42] px-4 py-2 rounded-md' placeholder='Coupon Code'/>
+                    <input type="text" className='bg-transparent border-2 border-[#252B42] px-4 py-2 rounded-md' placeholder='Coupon Code' />
                     <button className='px-3 py-2 bg-[#23A6F0] text-white rounded-md hover:border-[#23A6F0] hover:text-[#23A6F0] hover:bg-white border-2 border-transparent transition-all'>Apply Coupon</button>
                 </div>
                 <div className='flex flex-col justify-between items-start py-5 px-3 rounded-md border-2 border-[#252B42] text-[#252B42] w-96 gap-4 max-md:w-full'>

@@ -1,9 +1,8 @@
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import BrandsName from '../components/BrandsName';
-import { LiaIconsSolid } from "react-icons/lia";
 import ShopProduct from '../components/ShopProduct';
-import { GrTask } from "react-icons/gr";
+
 
 
 
@@ -34,23 +33,7 @@ function ShopPage() {
                     </div>
                 </div>
             </div>
-            <div className="filter max-w-5xl mx-auto flex justify-between items-center text-xs text-[#737373] py-6 font-bold">
-                <div>
-                    <p>Showing all 12 results</p>
-                </div>
-                <div className='flex items-center gap-5'>
-                    <p>Views:</p>
-                    <LiaIconsSolid />
-                    <span className='p-3 border-1 border-[#737373]'>
-                        <GrTask className='text-base' />
-                    </span>
-                </div>
-                <div className='flex gap-2'>
-                    <p className='p-2 border-1 border-[#737373]'>Popularity
-                    </p>
-                    <button className='text-white px-5 py-2 font-bold bg-[#23A6F0] rounded'>Filter</button>
-                </div>
-            </div>
+            
             <ShopProduct />
             <div className='w-full flex justify-center items-center py-12 text-[#23A6F0]'>
                         <div className='border-2 border-[#E8E8E8] flex rounded'>

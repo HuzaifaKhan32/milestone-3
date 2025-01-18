@@ -8,42 +8,26 @@ import { IoEye } from "react-icons/io5";
 import Products from "../../components/Products"
 import BrandsName from '@/app/components/BrandsName';
 import { client } from '@/sanity/lib/client'
-import imageUrlBuilder from '@sanity/image-url'
 
-interface Source {
-    asset : {
-        _ref: string
-        _type: string 
-    },
-    _type: string
-}
 
-// Get a pre-configured url-builder from your sanity client
-const builder = imageUrlBuilder(client)
-
-// Then we like to make a simple function like this that gives the
-// builder an image and returns the builder for you to specify additional
-// parameters:
-function urlFor(source: Source) {
-    console.log(source)
-  return builder.image(source)
-}
 
 
 
 interface IProduct {
-    title: string
-    slug: string
-    price: string
-    desc: string
-    image: string
+    title: string,
+    price: number,
+    productImage: string,
+    description: string,
+    _id: string,
+    isNew: boolean,
+    dicountPercentage: number
 }
 
 
 async function page({ params }: { params: { slug: string } }) {
 
     const getProductData = async () => {
-        const res = await client.fetch(`*[_type == "Product" && slug == "${params.slug[0]}"]`);
+        const res = await client.fetch(`*[_type == "product" && slug.current == "${params.slug[0]}"]`);
         return res
     }
 
@@ -63,7 +47,7 @@ async function page({ params }: { params: { slug: string } }) {
                     <div className="left min-h-[34rem] max-w-[50%] flex justify-between max-md:justify-evenly items-start flex-col gap-10 max-md:gap-3 overflow-x-hidden max-md:w-full ">
                         <div className='max-h-[28rem] max-md:h-full max-md:w-full'>
                             <Image
-                                src={urlFor(data[0].image).url()}
+                                src={data[0].productImage}
                                 alt='Product Image'
                                 width={200}
                                 height={200}
@@ -72,14 +56,14 @@ async function page({ params }: { params: { slug: string } }) {
                         </div>
                         <div className='example-images flex gap-7'>
                             <Image
-                                src={urlFor(data[0].image).url()}
+                                src={data[0].productImage}
                                 alt='Product Image'
                                 width={200}
                                 height={200}
                                 objectFit='cover'
                                 className='max-h-24 max-w-24 max-md:w-full' />
                             <Image
-                                src={urlFor(data[0].image).url()}
+                                src={data[0].productImage}
                                 alt='Product Image'
                                 width={200}
                                 height={200}
@@ -116,7 +100,7 @@ async function page({ params }: { params: { slug: string } }) {
                                 <p className='text-[#73737373] text-sm'>Avaiablity : <span className='text-[#23A6F0]'>In stock</span></p>
                             </div>
                             <div className="text-sm text-[#858585]">
-                                <p className='text-left'>{data[0].desc}</p>
+                                <p className='text-left'>{data[0].description.slice(0, 300)}</p>
                             </div>
                         </div>
                         <div className="2 flex gap-10 flex-col py-5">
